@@ -10,4 +10,6 @@
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet UIButton *conversionButton;
 
+- (void)getWeatherInformation;
+
 @end
