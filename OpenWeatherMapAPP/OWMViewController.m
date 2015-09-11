@@ -185,13 +185,15 @@
     if (self.currentTemperatureFormat == kOWMTempCelcius) {
         newTemperature = [OWMWeatherAPP tempCelsiusToFahrenheit:[NSNumber numberWithFloat:self.currentTemperature]];
         self.currentTemperatureFormat = kOWMTempFahrenheit;
+        self.currentTemp.text = [NSString stringWithFormat:@"%.1f°F",[newTemperature floatValue]];
     } else {
         newTemperature = [OWMWeatherAPP tempFarToCelcius:[NSNumber numberWithFloat:self.currentTemperature]];
         self.currentTemperatureFormat = kOWMTempCelcius;
+        self.currentTemp.text = [NSString stringWithFormat:@"%.1f°C",[newTemperature floatValue]];
     }
     self.currentTemperature = [newTemperature floatValue];
     [self applyStyleConversionButton:self.currentTemperatureFormat];
-    self.currentTemp.text = [NSString stringWithFormat:@"%.1f℃",[newTemperature floatValue]];
+    
     
 }
 
