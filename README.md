@@ -4,6 +4,7 @@ Given the time required to the development of this app, which is between 1.5 to 
 - forecast for 5 days
 - pull the table to refresh the information
 - conversion Celsius/Fahrenheit and vice versa
+- displayed weather icons as they come from the API
 
 Here in the following the list of things still to do given more time (estimation given):
 
